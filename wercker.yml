@@ -1,4 +1,4 @@
-# This references a minimal alpine image with g++ and opengl 
+# This references a minimal alpine image with g++ cmake and opengles
 box: kennethskov/alpine-gxx-opengl
 
 # This is the build pipeline. Pipelines are the core of wercker
@@ -13,12 +13,6 @@ build:
         name: cmake
         code: |
           mkdir build
-          cd build
-          cmake ../
-
-    - script:
-        name: ccmake
-        code: |
           cd build
           cmake ../
           
