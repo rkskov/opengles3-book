@@ -20,11 +20,15 @@ build:
     - script:
         name: ccmake
         code: |
+          cd build
+          pwd
           pwd
           ccmake ../
           
     - script:
         name: make
         code: |
+          cd build
+          pwd
           pwd
           make 
