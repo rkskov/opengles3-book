@@ -21,3 +21,12 @@ build:
         code: |
           cd build
           make 
+          
+deploy:
+  steps:
+    - internal/docker-push:
+        username: $USERNAME
+        password: $PASSWORD
+        tag: my-amazing-tag
+        repository: kennethskov/opengles3
+        registry: https://registry.hub.docker.com
