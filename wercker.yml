@@ -21,8 +21,7 @@ build:
         code: |
           ccmake ../
           
-   - script:
+    - script:
         name: make
         code: |
           make 
-   
