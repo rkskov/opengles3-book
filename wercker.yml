@@ -27,6 +27,8 @@ deploy:
     - internal/docker-push:
         username: $USERNAME
         password: $PASSWORD
-        tag: my-amazing-tag
+        tag: latest
         repository: kennethskov/opengles3
-        registry: https://registry.hub.docker.com
+   
+   
+   
