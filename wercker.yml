@@ -14,21 +14,16 @@ build:
         code: |
           mkdir build
           cd build
-          pwd
           cmake ../
 
     - script:
         name: ccmake
         code: |
           cd build
-          pwd
-          pwd
-          ccmake ../
+          cmake ../
           
     - script:
         name: make
         code: |
           cd build
-          pwd
-          pwd
           make 
